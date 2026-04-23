@@ -1,6 +1,9 @@
 from flask import Flask
 
-app = Flask(__name__)
+DATABASE = 'database.db'
+
+
+app = Flask(__UpComingSteamGames__)
 
 @app.route('/')
 def home():
