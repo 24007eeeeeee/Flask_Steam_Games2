@@ -36,7 +36,9 @@ def home():
     results = query_db(sql)
     return str(results)
 
-
+@app.route("/game/<int:id>")
+def game(id):
+    #just one game based on the id
 
 if __name__ == "__main__":
     app.run(debug=True)
