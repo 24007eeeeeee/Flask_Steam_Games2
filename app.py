@@ -14,20 +14,29 @@ def get_db():
 
 @app.teardown_appcontext
 def close_connection(exception):
+    #Closes the database connection automatically when the application context ends
     db = getattr(g, '_database', None)
     if db is not None:
         db.close() 
 
+def query_db(query, args=(), one=False):
+    cur = get_db().execute(query, args)
+    rv = cur.fetchall()
+    cur.close()
+    return (rv[0] if rv else None) if one else rv
+
 
 @app.route('/')
 def home():
-    #home page
-    db = get_db()
-    cursor = db.cursor()
-    sql = "SELECT * FROM SteamGames;"
-    cursor.execute(sql)
-    results = cursor.fetchall()
+    #home page- just the ID, Studio, Games and Image URL
+    sql = """
+                SELECT SteamGames.GameID,Studios.Name,SteamGames.Game,SteamGames.ImageURL
+                FROM SteamGames
+                JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
+    results = query_db(sql)
     return str(results)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

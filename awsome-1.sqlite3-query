@@ -109,3 +109,8 @@ JOIN Studios ON Studios.StudioID=Studios.StudioID;
 SELECT SteamGames.Game FROM SteamGames
 JOIN Studios ON Stuios.StudioID=SteamGames.StudioID
 WHERE Studios.Name="DuneCrawl";
+
+--just id, studio, games and imageurl
+SELECT SteamGames.GameID,Studios.Name,SteamGames.Game,SteamGames.ImageURL
+FROM SteamGames
+JOIN Studios ON Studios.StudioID=SteamGames.StudioID;
