@@ -39,6 +39,11 @@ def home():
 @app.route("/game/<int:id>")
 def game(id):
     #just one game based on the id
+    sql = """SELECT * FROM SteamGames
+    JOIN Studios ON Studios.StudioID=SteamGames.StudioID
+    WHERE Studios.StudioID=?;"""
+    result = query_db(sql,(id,),True)
+    return str(result)
 
 if __name__ == "__main__":
     app.run(debug=True)

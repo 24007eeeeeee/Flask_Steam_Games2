@@ -105,12 +105,7 @@ SELECT Studios.Name,SteamGames.Game FROM SteamGames
 JOIN Studios ON Studios.StudioID=Studios.StudioID;
 
 
---games of one make
-SELECT SteamGames.Game FROM SteamGames
-JOIN Studios ON Stuios.StudioID=SteamGames.StudioID
-WHERE Studios.Name="DuneCrawl";
-
---just id, studio, games and imageurl
-SELECT SteamGames.GameID,Studios.Name,SteamGames.Game,SteamGames.ImageURL
-FROM SteamGames
-JOIN Studios ON Studios.StudioID=SteamGames.StudioID;
+-- All data on ONE game depending on studio id
+SELECT * FROM SteamGames
+JOIN Studios ON Studios.StudioID=SteamGames.StudioID
+WHERE Studios.StudioID="35";
