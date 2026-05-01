@@ -34,7 +34,7 @@ def home():
                 FROM SteamGames
                 JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
     results = query_db(sql)
-    return render_template("layout.html")
+    return render_template("home.html",results=results)
 
 @app.route("/game/<int:id>")
 def game(id):

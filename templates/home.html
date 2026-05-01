@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block body %}
+<!-- Home page goes here -->
+ <!-- a three column grid -->
+  <div class="three-column">
+    {% for game in results %}
+    <div class="w3-cards-4">
+        <!-- the name then the image -->
+         <h1>{{ game[1] }} {{ game[2] }}</h1>
+         <img src="{{ game[4] }}" alt="{{ game[2] }}"
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
