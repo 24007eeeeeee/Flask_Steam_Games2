@@ -7,3 +7,29 @@ body,h1,h2,h3,h4,h5,h6 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
 }
+
+/* all images are 100% */
+img{
+    width: 100%;
+}
+
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* This creates the dark, centered strip for your content */
+.main-container {
+    background-color: rgba(14, 51, 75, 0.9); /* Steam's signature dark blue, slightly transparent */
+    max-width: 1000px;
+    margin: 0 auto; /* Centers the container */
+    min-height: 100vh;
+    padding: 20px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    color: #c7d5e0;
+}
+16:25
