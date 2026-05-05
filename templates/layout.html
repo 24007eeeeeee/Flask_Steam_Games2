@@ -6,16 +6,32 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"> 
-    <title>Upcoming 2026 Steam Games</title>
+    <title>Upcoming </title>
 </head>
 <body class="w3-container">
     <div class="main-container"> <header class="w3-container w3-padding-32">
             <h1>2026 Upcoming Steam Games</h1>
         </header>
 
-        <nav class="w3-bar" style="background-color: #293b50; color: #c7d5e0;">
-            <a href="/" class="w3-bar-item w3-button">Home</a>
-        </nav>
+<nav class="nav-bar" style="background-color: #1d2841; display: flex; align-items: center; padding: 5px 10px; position: relative; top: -5px; min-height: 40px;">
+    <a href="/" style="display: flex; align-items: center; text-decoration: none; margin-left: 5px;">
+        <img src="{{ url_for('static', filename='steamicon.png') }}" 
+             alt="Steam Logo" 
+             style="height: 25px; width: auto; margin-right: 10px;">
+        
+        <span style="color: #c7d5e0; font-weight: bold; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px;">
+            Home
+        </span>
+    </a>
+</nav>
+
+<nav class="w3-bar" style="background-color: #202f3f; color: #c7d5e0; position: relative; top: 5px;">
+    <span class="w3-bar-item" style="font-weight: normal; text-transform: uppercase; letter-spacing: 0.5px;">
+        ALREADY RELEASED/UPCOMING STEAM GAMES AS OF 2026
+    </span>
+</nav>
+
+
 
         {% block body %}
         {% endblock %}
