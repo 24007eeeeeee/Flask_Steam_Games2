@@ -28,13 +28,13 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-    #home page- just the ID, Studio, Games and Image URL
+    # Selecting GameID(0), Studio Name(1), Game Title(2), ImageURL(3), and Cost(4)
     sql = """
-                SELECT SteamGames.GameID,Studios.Name,SteamGames.Game,SteamGames.ImageURL
-                FROM SteamGames
-                JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
+            SELECT SteamGames.GameID, Studios.Name, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost
+            FROM SteamGames
+            JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
     results = query_db(sql)
-    return render_template("home.html",results=results)
+    return render_template("home.html", results=results)
 
 @app.route("/game/<int:id>")
 def game(id):
