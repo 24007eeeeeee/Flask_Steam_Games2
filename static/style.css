@@ -1,3 +1,15 @@
+body {
+    /* BACKGROUND IMAGE */
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    /* Optional: adds a fall-back color in case the image fails to load */
+    background-color: #051018; 
+}
+
 body,h1,h2,h3,h4,h5,h6 {
     font-family: Roboto, sans-serif;
 }
@@ -32,4 +44,12 @@ body {
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
     color: #c7d5e0;
 }
+
+.three-column h3 {
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
 16:25

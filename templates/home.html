@@ -1,14 +1,17 @@
 {% extends "layout.html" %}
 {% block body %}
-<!-- Home page goes here -->
- <!-- a three column grid -->
-  <div class="three-column">
+<div class="three-column">
     {% for game in results %}
-    <div class="w3-cards-4">
-        <!-- the name then the image -->
-         <h1>{{ game[2] }}</h1>
-         <img src="{{ game[3] }}" alt="{{ game[2] }}">
+    <div class="w3-card-4" style="background: rgba(23, 26, 33, 0.8); margin-bottom: 20px; padding-bottom: 10px;">
+        <a href="{{ url_for('game', id=game[0]) }}">
+            <img src="{{ game[3] }}" alt="{{ game[2] }}">
+        </a>
+
+        <div style="padding: 10px;">
+            <h3 style="font-size: 1.1em; margin: 5px 0;">{{ game[2] }}</h3>
+            <p style="color: #66c0f4; font-size: 0.9em;">{{ game[1] }}</p>
+        </div>
     </div>
     {% endfor %}
-  </div>
+</div>
 {% endblock %}
