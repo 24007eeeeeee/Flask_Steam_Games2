@@ -41,7 +41,7 @@ body {
     margin: 0 auto; /* Centers the container */
     min-height: 100vh;
     padding: 5px;
-    box-shadow: 0 0 50px rgba(61, 235, 241, 0.5);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
     color: #c7d5e0;
 }
 
