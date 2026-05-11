@@ -41,9 +41,9 @@ def game(id):
     #just one game based on the id
     sql = """SELECT * FROM SteamGames
     JOIN Studios ON Studios.StudioID=SteamGames.StudioID
-    WHERE Studios.StudioID=?;"""
+    WHERE SteamGames.GameID = ?;"""
     result = query_db(sql,(id,),True)
-    return str(result)
+    return render_template("game.html", game=result)
 
 if __name__ == "__main__":
     app.run(debug=True)
