@@ -52,20 +52,17 @@ body {
     margin-top: 10px;
 }
 
-nav.w3-bar {
-    margin-top: 140px; /* Pulls the bar UP by 5 pixels */
-    min-height: unset !important; 
-    height: 25px; /* Set the exact thickness you want */
-    display: flex;
-    align-items: center; /* Keeps the text centered vertically */
-    
-}
-nav.w3-bar span {
-    color: #ffffff; /* Makes the text pure white */
-}
 
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
 }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+
