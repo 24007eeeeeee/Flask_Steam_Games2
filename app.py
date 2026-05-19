@@ -28,9 +28,9 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-    # Selecting GameID(0), Studio Name(1), Game Title(2), ImageURL(3), and Cost(4)
+               # Selecting GameID(0), Studio Name(1), ImageURL(2), Cost(3), Description(4), and VideoURL(6)
     sql = """
-            SELECT SteamGames.GameID, Studios.Name, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost
+            SELECT SteamGames.GameID, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost, SteamGames.Description, SteamGames.VideoURL
             FROM SteamGames
             JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
     results = query_db(sql)

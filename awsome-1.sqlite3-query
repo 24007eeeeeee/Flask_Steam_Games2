@@ -110,3 +110,6 @@ SELECT * FROM SteamGames
 JOIN Studios ON Studios.StudioID=SteamGames.StudioID
 WHERE Studios.StudioID="35";
 
+            SELECT SteamGames.GameID, SteamGames.Game, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost, SteamGames.Description, SteamGames.VideoURL
+            FROM SteamGames
+
