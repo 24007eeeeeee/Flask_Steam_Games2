@@ -45,5 +45,6 @@ def game(id):
     result = query_db(sql,(id,),True)
     return render_template("game.html", game=result)
 
+
 if __name__ == "__main__":
     app.run(debug=True)

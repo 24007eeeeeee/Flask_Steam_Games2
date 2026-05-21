@@ -55,6 +55,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3em;
+    
 }
 
 
@@ -64,3 +65,8 @@ body {
 }
 
 
+.Title {
+    margin-left: 560px;
+    margin-bottom: -50px;
+    color:rgba(255, 255, 255, 0.9)
+}

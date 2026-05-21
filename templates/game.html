@@ -1,16 +1,23 @@
 {% extends "layout.html" %}
 {% block body %}
-<!-- two column grid -->
+
+<div class="Title">
+     <h1>{{ game[2] }}</h1>
+    </div>
 
 <!-- Youtube video -->
 <iframe src="{{ game[7]}}" width="550" height="345" style="border: none;">
 </iframe>
 
 <div class="two-column">
+        <div class="info">
+    <!--info panel-->
+    <div class ="info">
+    <h1>{{ game[5] }}</h1>
+    </div>
+
     <!-- images on the left-->
-    <img src="{{ game[6] }}" alt="{{ game[2] }}">
-
-
+    <img src="{{ game[6] }}" alt="{{ game[2] }}">  
 </div>
 {% endblock %}
 18:35
