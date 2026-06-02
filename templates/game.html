@@ -9,19 +9,33 @@
 <iframe src="{{ game[7]}}" width="550" height="345" style="border: none;">
 </iframe>
 
-<div class="two-column">
-    <div class="info">
-    <!--info panel-->
-    <div class ="info">
-    <h1>{{ game[5] }}</h1>
+<!-- Game Info here -->
+<div class="information">
+    <p>{{ game[5] }}</p>
     </div>
 
-    <!-- images on the left-->
-    <img src="{{ game[6] }}" alt="{{ game[2] }}">  
+ <!-- Just a little title -->   
+<div class="txtimage">
+    <h2>3 in game screenshots </h2>
+</div>
+    
+<!-- Images are here -->
+<!-- This is the first image -->
+<div class="gameimg1">
+        <img src="{{ game[8] }}"> 
 </div>
 
-<div class="second-image">
-    <img src="{{ game[8]}}">
+<!-- This is the second image -->
+<div class="gameimg2">
+    <img src="{{ game[9]}}">
 </div>
+
+<!-- This is the third image -->
+<div class="gameimg3">
+    <img src="{{ game[10]}}">
+</div>
+
+
+
 {% endblock %}
 18:35
