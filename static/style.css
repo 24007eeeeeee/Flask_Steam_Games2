@@ -91,3 +91,13 @@ h2 {
   font-size: 17px;
 }
 
+.costgame {
+  color:rgb(17, 51, 68);
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 560px;
+  padding: 4px 8px;
+  display: inline-block;
+  background-color: rgb(173, 247, 69);
+}
