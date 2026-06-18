@@ -2,14 +2,14 @@
 {% block body %}
 
 
+<!-- Youtube video -->
+<iframe class="video" src="{{ game[7]}}" width="550" height="345" style="border: none;" allowfullscreen>
+</iframe>
+
+<!-- Title of the game-->
 <div class="Title">
      <h1>{{ game[2] }}</h1>
     </div>
-
-
-<!-- Youtube video -->
-<iframe src="{{ game[7]}}" width="550" height="345" style="border: none;" allowfullscreen>
-</iframe>
 
 
 <!-- Game Info here -->
@@ -17,13 +17,15 @@
     <p>{{ game[5] }}</p>
     </div>
 
+<!-- This displays a $ then the cost of each game -->
 <div class="costgame">
     <span>$</span>
     {{ game[4] }}
 </div>
 
+
 <div class="txtusd">
-    <h2>
+    <span>currency is shown in USD</span>
 </div>
 
 

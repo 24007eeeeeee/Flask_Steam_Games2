@@ -2,6 +2,7 @@
 {% block body %}
 <div class="three-column">
     {% for game in results %}
+
     <div class="w3-card-4" style="margin-bottom: 20px;
                                   border-radius: 0px;
                                   overflow: hidden;
@@ -34,8 +35,7 @@
                 <div class="gamelabel">
                     {{ game[1] }}
                 </div>
-
-
+                
                 <!-- game 3 is cost-->
                 <div class="cost" style="color:rgb(17, 51, 68);
                                          background-color: rgb(173, 247, 69);
@@ -48,26 +48,16 @@
                 </div>
             </h3>
 
-
             <p style="color: #c7d5e0;
                       font-size: 0.85em;
                       margin-top: -5px;
                       margin-bottom: 0;">
                       </p>
+
         <div>
-
-
             </div>
-
-
         </div>
-
-
     </div>
-
-
-
-
     {% endfor %}
 </div>
 {% endblock %}

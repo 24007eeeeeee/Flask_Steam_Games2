@@ -66,13 +66,14 @@ body {
 
 
 .Title {
+  margin-top: -375px;
+    font-size: 10px;
     margin-left: 560px;
-    margin-bottom: -50px;
     color:rgba(255, 255, 255, 0.9)
 }
 
 .information {
-  margin-top: -320px;
+  margin-top: 10px;
   width: 40%;
   margin-left: 560px;
   margin-right: 0; /*this makes the <p> stick to the right side of the page*/
@@ -100,4 +101,30 @@ h2 {
   padding: 4px 8px;
   display: inline-block;
   background-color: rgb(173, 247, 69);
+}
+
+.txtusd {
+  color:rgb(255, 255, 255);
+  font-size: 1.1em;
+  line-height: 1.2;
+  padding: 4px 8px;
+  display: inline-block;
+  background-color: rgb(71, 84, 100);
+  margin-top: -90px;
+
+}
+
+.hometxtusd {
+  color: rgb(204, 204, 204);
+  font-size: 0.7em;
+  line-height: 1.2;
+  padding: 4px 8px;
+  margin-top: -23px;
+  margin-right: 50px;
+  gap: -150px;
+}
+
+.video {
+  margin-bottom: 50px;
+
 }
