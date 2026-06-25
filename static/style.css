@@ -128,3 +128,38 @@ h2 {
   margin-bottom: 50px;
 
 }
+
+.cost {
+  color:rgb(17, 51, 68);
+  background-color: rgb(173, 247, 69);
+  padding: 4px 8px;
+  margin-top: 5px;
+  margin-left: 205px;
+  display: inline-block;
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.gamelabel {
+  font-size: 1.1em;
+  margin: 0; color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.w3-card-4 {
+  margin-bottom: 20px;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.databaseselect0 {
+  display: block;
+  line-height: 0;
+  width: 100%;
+}
