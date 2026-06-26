@@ -3,40 +3,31 @@
 <div class="three-column">
     {% for game in results %}
 
-    <!-- This provides styling from style.css to all under the div-->
-    <div class="w3-card-4">
+        <div class="w3-card-4">
 
-        <!-- Retrieves information from db -->
-        <div class="databaseselect0">
-        <a href="{{ url_for('game', id=game[0]) }}">
-                                                           
-            <img src="{{ game[2] }}" alt="{{ game[] }}">
-        </a>
-        </div>
-
-        <div class="style-0">
-           
-            <h3 style="font-size: 1.1em;
-                       margin: 0; color: #ffffff;
-                       font-weight: bold;
-                       line-height: 1.2;">
-                       
-                 <!-- game 1 is studio name-->      
+            <div class="databaseselect0">
+                <a href="{{ url_for('game', id=game[0]) }}">
+                    <img src="{{ game[2] }}" alt="{{ game[] }}">
+                </a>
+            </div>
+            
+            <!-- This groups "gamelabel" & "cost2", then adds padding -->
+            <div style="padding: 15px;">
+        
                 <div class="gamelabel">
                     {{ game[1] }}
                 </div>
                 
-                <!-- game 3 is cost-->
-                <div class="cost">
+                <div class="cost2">
                     <span>$</span>  
-                  {{ game[3]}}
+                    {{ game[3] }}
                 </div>
-            </h3>
-        <div>
-
+                
             </div>
         </div>
-    </div>
+
+
+
     {% endfor %}
 </div>
 {% endblock %}

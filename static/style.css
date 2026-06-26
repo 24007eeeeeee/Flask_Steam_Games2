@@ -163,3 +163,20 @@ h2 {
   line-height: 0;
   width: 100%;
 }
+
+h3 {
+  font-size: 1.1em;
+  margin: 0; color: #ffffff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.cost2 {
+  color: rgb(17, 51, 68);
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 4px 8px;
+  background-color: rgb(173, 247, 69);
+  width: fit-content;
+}
