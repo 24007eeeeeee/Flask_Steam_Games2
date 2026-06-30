@@ -3,28 +3,28 @@
 <div class="three-column">
     {% for game in results %}
 
-        <div class="w3-card-4">
+<div class="w3-card-4">
 
-            <div class="databaseselect0">
-                <a href="{{ url_for('game', id=game[0]) }}">
-                    <img src="{{ game[2] }}" alt="{{ game[] }}">
-                </a>
-            </div>
-            
-            <!-- This groups "gamelabel" & "cost2", then adds padding -->
-            <div style="padding: 15px;">
-        
-                <div class="gamelabel">
-                    {{ game[1] }}
-                </div>
-                
-                <div class="cost2">
-                    <span>$</span>  
-                    {{ game[3] }}
-                </div>
-                
-            </div>
-        </div>
+<div class="databaseselect0">
+    <a href="{{ url_for('game', id=game[0]) }}">
+        <img src="{{ game[2] }}" alt="{{ game[] }}">
+    </a>
+</div>
+
+<!-- This groups "gamelabel" & "cost2", then adds padding -->
+<div style="padding: 15px;">
+
+<div class="gamelabel">
+    {{ game[1] }}
+</div>
+         
+<div class="cost2">
+    <span>$</span>  
+    {{ game[3] }}
+</div>
+    
+</div>
+</div>
 
 
 
