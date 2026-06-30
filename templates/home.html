@@ -6,18 +6,22 @@
 <div class="w3-card-4">
 
 <div class="databaseselect0">
+    <!-- This makes it so that the images are a link to the game page-->
     <a href="{{ url_for('game', id=game[0]) }}">
-        <img src="{{ game[2] }}" alt="{{ game[] }}">
+    <!-- Grabs text of the game name-->
+    <img src="{{ game[2] }}" alt="{{ game[] }}">
     </a>
 </div>
 
 <!-- This groups "gamelabel" & "cost2", then adds padding -->
 <div style="padding: 15px;">
 
+<!-- Grabs studio-->
 <div class="gamelabel">
     {{ game[1] }}
 </div>
-         
+
+<!-- Just $ sign in front of the cost -->
 <div class="cost2">
     <span>$</span>  
     {{ game[3] }}

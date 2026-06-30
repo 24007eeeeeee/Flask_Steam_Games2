@@ -15,26 +15,27 @@
 
 
 
-<!-- This is the Nav Bar-->
+<!-- This is the Nav Bar -->
 <nav class="topnav">
 
 <div class="style0">
 <a href="/">
 <div class="steamicon2">
+
 <img src="{{ url_for('static', filename='steamicon.png') }}" alt="Steam Logo">
 </div>
+<!-- Just a span -->
 <div class="hometextstyle">
     <span>Home</span>
 </div>
 </a>
 </div>
 
-
+<!-- Just the search bar -->
 <div class="search-bar">
-    <input type="text" id="page-search" placeholder="Search for games within the page!">
+    <input type="text" id="page-search" placeholder="Search for games within the page! (HOME PAGE)">
 </div>
 </nav>
-
 
 <!-- This is a label which appears only on Home Page -->
 <div style="background-color: #202f3f;
@@ -49,6 +50,7 @@
     ALREADY RELEASED/UPCOMING STEAM GAMES AS OF 2026
 </div>
 
+<!-- Just a span tag-->
 <div style="background: linear-gradient(to top, #1b2838 0%, #1b2838 150%);
             color:#ffffff;
             letter-spacing: 0.5px;
@@ -65,6 +67,9 @@
 {% block body %}
 {% endblock %}
 </div> 
+
+<!-- Links to javascript -->
 <script src="{{ url_for('static', filename='search.js') }}"></script>
+
 </body>
 </html>
