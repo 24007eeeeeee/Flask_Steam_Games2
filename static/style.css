@@ -228,3 +228,18 @@ h3 {
     height: 100%;
     outline: none;
 }
+
+.studio-name {
+  margin-top: -25px;
+  width: 40%;
+  margin-left: 560px;
+  margin-right: 0; /*this makes the <p> stick to the right side of the page*/
+}
+
+.studio-label {
+  margin-top: -33.5px;
+  width: 40%;
+  margin-left: 630px;
+  margin-right: 0; /*this makes the <p> stick to the right side of the page*/
+
+}

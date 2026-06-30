@@ -6,16 +6,25 @@
 <iframe class="video" src="{{ game[7]}}" width="550" height="345" style="border: none;" allowfullscreen>
 </iframe>
 
-<!-- Title of the game-->
+<!-- Title of the game -->
 <div class="Title">
      <h1>{{ game[2] }}</h1>
     </div>
 
+<!-- Just the studio name -->
+<div class="studio-name">
+    <h2>{{ game['Name'] }}</h2>
+</div>
+
+<!-- Just a simple label to tell the user that this is the studio -->
+<div class="studio-label">
+    <span>| Studio name</span>
+</div>
 
 <!-- Game Info here -->
 <div class="information">
     <p>{{ game[5] }}</p>
-    </div>
+    </div
 
 <!-- This displays a $ then the cost of each game -->
 <div class="costgame">

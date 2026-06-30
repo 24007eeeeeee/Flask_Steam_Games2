@@ -10,6 +10,8 @@ def get_db():
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect(DATABASE)
+        #Makes it use column names like 'cost' instead of numbers like game[3]
+        db.row_factory = sqlite3.Row 
     return db
 
 @app.teardown_appcontext
@@ -48,3 +50,5 @@ def game(id):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
