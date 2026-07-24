@@ -13,8 +13,6 @@
     <div class="main-container"> <header class="w3-container w3-padding-32">
 </header>
 
-
-
 <!-- This is the Nav Bar -->
 <nav class="topnav">
 
@@ -24,15 +22,19 @@
 
 <img src="{{ url_for('static', filename='steamicon.png') }}" alt="Steam Logo">
 </div>
-
-<!-- Just a span -->
+<!-- Just a span ON NAV BAR-->
 <div class="hometextstyle">
     <span>Home</span>
 </div>
 </a>
 </div>
 
-<span> Studio Info</span>
+<a href="studiodesc">
+<!-- Just a span ON NAV BAR-->
+<div class="studiodesstyle">
+    <span> Studio Info</span>
+</div>
+</a>
 
 <!-- Just the search bar -->
 <div class="search-bar">
@@ -45,7 +47,6 @@
     <span>ALREADY RELEASED/UPCOMING STEAM GAMES AS OF 2026</span>
 </div>
 
-
 <!-- Just a span label -->
 <div class="labeltext2">
     <span>currency is shown in USD</span>
@@ -53,7 +54,6 @@
 
 {% if request.endpoint == 'home' %}
 {% endif %}
-
 
 {% block body %}
 {% endblock %}

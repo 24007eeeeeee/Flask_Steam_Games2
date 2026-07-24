@@ -48,6 +48,7 @@ body {
     font-weight: bold;
     text-align: left;
     margin-top: 10px;
+  
 }
 
 
@@ -86,9 +87,40 @@ body {
   margin-right: 0; /*this makes the <p> stick to the right side of the page*/
 }
 
+/*DISPLAYS images then expands when hovered over with mouse*/
 .gameimg1 {
-  margin-top: -15px;
+  padding: 2px;
+  transition: transform .2s; /* Animation */
+  width: 600px;
+  height: 310px;
+  margin: 0 auto;
 }
+.gameimg1:hover {
+  transform: scale(1.88);
+}
+
+.gameimg2 {
+  padding: 2px;
+  transition: transform .2s; /* Animation */
+  width: 600px;
+  height: 310px;
+  margin: 0 auto;
+}
+.gameimg2:hover {
+  transform: scale(1.88);
+}
+
+.gameimg3 {
+  padding: 2px;
+  transition: transform .2s; /* Animation */
+  width: 600px;
+  height: 310px;
+  margin: 0 auto;
+}
+.gameimg3:hover {
+  transform: scale(1.88);
+}
+
 
 .txtimage {
   padding-top: 200px; 
@@ -157,6 +189,7 @@ h2 {
 }
 
 .w3-card-4 {
+  background: linear-gradient(to right, #1a626b 0%, transparent 100%);
   margin-bottom: 20px;
   border-radius: 0px;
   overflow: hidden;
@@ -201,6 +234,17 @@ h3 {
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.studiodesstyle {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-left: -270px;
+
 }
 
 .style0 {
@@ -264,3 +308,4 @@ h3 {
   font-size: 0.7em;
   padding: 4px 15px;
 }
+
