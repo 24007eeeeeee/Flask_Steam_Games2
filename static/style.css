@@ -234,6 +234,9 @@ h3 {
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 1px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
 }
 
 .studiodesstyle {
@@ -244,6 +247,9 @@ h3 {
   letter-spacing: 1px;
   margin-top: 25px;
   margin-left: -270px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
 
 }
 
@@ -298,6 +304,10 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 0.9em;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  text-decoration: underline;
 }
 
 .labeltext2 {
@@ -314,10 +324,42 @@ h3 {
 }
 
 .studiodesstyle {
-  margin-left: -357px;
+  margin-left: -267px;
 }
 
 .labeltext3 {
-  margin-right: -150px;
+  margin-right: -30px;
   margin-bottom: -26px;
+}
+
+.StudioDescHeading1 {
+  background-image: linear-gradient(rgb(126, 243, 233), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  margin-right: -500px;
+}
+
+.studioparagraph {
+  color:#ffffff;
+  background-image: linear-gradient(rgb(228, 249, 255), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  font-size: 12px;
+  margin-top: -20px;
+}
+
+.justaline1 {
+  border: none;               
+  height: 2px;                
+  background-color: #faf2f2;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.justaline {
+  border: none;
+  height: 2px;
+  background-color: #faf2f2;
+  width: 100%;
+
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <title>Studio Information</title>
+    <title>Studio</title>
     <link rel="icon" type="image/x-icon" href="/static/steamicon.png">
 </head>
 <body class="w3-container">
@@ -24,27 +24,38 @@
 </div>
 <!-- Just a span ON NAV BAR-->
 <div class="hometextstyle">
-    <span>Home</span>
+    <span>Return Home?</span>
 </div>
     </a>
 </div>
 
-<div class="labeltext3">
-    <span>(Studio Info access by Homepage only)</span>
-</div>
-
     <a href="studiodesc">
-<!-- Just a span ON NAV BAR-->
-<div class="studiodesstyle">
-    <span> Studio Info</span>
-</div>
     </a>
 
 <!-- Just the search bar -->
 <div class="search-bar">
-    <input type="text" id="page-search" placeholder="Search for games within the page! (HOME PAGE)">
+    <input type="text" id="page-search" placeholder="Go back to Homepage to search">
 </div>
 </nav>
+
+<!-- This really is just a line-->
+<hr class="justaline1">
+
+<!-- just a heading -->
+<div class="StudioDescHeading1">
+    <h1>Welcome to the Studios Info Page!</h1>
+</div>
+
+<!-- just a paragraph-->
+<div class="studioparagraph">
+    <p>"What does this page do?"" | USER <br> "Well I'm glad you asked!" | WEBSITE <br> "This page displays the name 
+        and information for 45 different studios which developed 48 different games" | WEBSITE<br> "Oh wow!!! thats so awsome and useful!" | USER <br>
+        "I knoooow duuude" | WEBSITE
+    </p>
+</div>
+
+<!-- This really is just a line-->
+<hr class="justaline">
 
 {% if request.endpoint == 'home' %}
 {% endif %}
