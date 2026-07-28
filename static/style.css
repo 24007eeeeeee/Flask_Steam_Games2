@@ -309,3 +309,15 @@ h3 {
   padding: 4px 15px;
 }
 
+.heading {
+  background: linear-gradient(to right, #1a626b 0%, transparent 100%);
+}
+
+.studiodesstyle {
+  margin-left: -357px;
+}
+
+.labeltext3 {
+  margin-right: -150px;
+  margin-bottom: -26px;
+}
