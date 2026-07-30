@@ -361,5 +361,28 @@ h3 {
   height: 2px;
   background-color: #faf2f2;
   width: 100%;
-
 }
+
+.mainstudiodesc1 {
+  background-image: linear-gradient(rgb(59, 236, 222), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+}
+
+.mainstudiodesc2 {
+  background-image: linear-gradient(rgb(59, 236, 222), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  margin-left:250px;
+  margin-top:-22px;
+}
+
+.mainstudiodesc3 {
+  background-image: linear-gradient(rgb(59, 236, 222), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  margin-left: 500px;
+  margin-top:-23px;
+}
+
+
