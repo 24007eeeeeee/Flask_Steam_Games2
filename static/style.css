@@ -237,6 +237,12 @@ h3 {
   background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
   color: transparent;
   background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.hometextstyle:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
 }
 
 .studiodesstyle {
@@ -245,12 +251,17 @@ h3 {
   font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-top: 25px;
+  margin-top: 27px;
   margin-left: -270px;
   background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
   color: transparent;
   background-clip: text;
-
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.studiodesstyle:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
 }
 
 .style0 {
@@ -337,6 +348,13 @@ h3 {
   color: transparent;
   background-clip: text;
   margin-right: -500px;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.1s ease; /* animation speed, smoothless for expanding */
+}
+
+.StudioDescHeading1:hover {
+  transform: scale(1.01); /* Expands the span to 110% from its original size */
 }
 
 .studioparagraph {

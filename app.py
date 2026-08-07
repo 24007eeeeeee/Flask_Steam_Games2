@@ -52,6 +52,10 @@ def game(id):
 def description():
     return render_template("studiodesc.html")
 
+#Just to a new page to studiodesc
+@app.route('/studiodesc')
+def description():
+    return render_template("studiodesc.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
