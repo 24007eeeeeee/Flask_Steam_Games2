@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Upcoming Steam Games as of 2026</title>
+    <link rel="icon" type="image/x-icon" href="/static/steamicon.png">
+</head>
+<body class="w3-container">
+    <div class="main-container"> <header class="w3-container w3-padding-32">
+</header>
+
+<!-- This is the Nav Bar -->
+<nav class="topnav">
+
+<div class="style0">
+<a href="/">
+<div class="steamicon2">
+
+<!-- Just selects the steam logo from static-->
+<img src="{{ url_for('static', filename='steamicon.png') }}" alt="Steam Logo">
+</div>
+<!-- Just a span ON NAV BAR-->
+<div class="hometextstyle">
+    <span>Return home?</span>
+</div>
+</a>
+</div>
+
+
+<!-- Just the search bar -->
+<div class="search-bar">
+    <input type="text" id="page-search" placeholder="Search for games within the page! (HOME PAGE)">
+</div>
+</nav>
+
+
+
+
+
+{% if request.endpoint == 'home' %}
+{% endif %}
+
+{% block body %}
+{% endblock %}
+</div> 
+
+</body>
+</html>
+
+

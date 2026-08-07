@@ -30,11 +30,10 @@ def query_db(query, args=(), one=False):
 
 @app.route('/')
 def home():
-               # Selecting GameID(0), Studio Name(1), ImageURL(2), Cost(3), Description(4), and VideoURL(6)
-    sql = """
-            SELECT SteamGames.GameID, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost, SteamGames.Description, SteamGames.VideoURL
-            FROM SteamGames
-            JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
+    # Selecting GameID(0), Studio Name(1), ImageURL(2), Cost(3), Description(4), and VideoURL(6)
+    sql = """SELECT SteamGames.GameID, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost, SteamGames.Description, SteamGames.VideoURL
+    FROM SteamGames
+    JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
     results = query_db(sql)
     return render_template("home.html", results=results)
 
@@ -52,10 +51,11 @@ def game(id):
 def description():
     return render_template("studiodesc.html")
 
-#Just to a new page to studiodesc
-@app.route('/studiodesc')
-def description():
-    return render_template("studiodesc.html")
+#Just to a new page to "myfavouritesteamgames.html"
+@app.route('/myfavouritesteamgames')
+def favouritesteamgames():
+    return render_template("myfavouritesteamgames.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
