@@ -87,6 +87,13 @@ body {
   margin-right: 0; /*this makes the <p> stick to the right side of the page*/
 }
 
+.releasedate {
+  margin-top: -0px;
+  width: 40%;
+  margin-left: 560px;
+  margin-right: 0; /*this makes the <p> stick to the right side of the page*/
+}
+
 /*DISPLAYS images then expands when hovered over with mouse*/
 .gameimg1 {
   padding: 2px;
@@ -264,6 +271,25 @@ h3 {
   transform: scale(1.1); /* Expands the span to 110% from its original size */
 }
 
+.myfavsteamgamesstyle {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: -95px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.myfavsteamgamesstyle:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
+}
+
 .style0 {
   display: flex;
   align-items: center;
@@ -302,7 +328,13 @@ h3 {
   width: 40%;
   margin-left: 755px;
   margin-right: 0; /*this makes the <p> stick to the right side of the page*/
+}
 
+.studio-label2 {
+  margin-top: -38px;
+  width: 40%;
+  margin-left: 755px;
+  margin-right: 0; /*this makes the <p> stick to the right side of the page*/
 }
 
 .labeltext {
@@ -335,7 +367,7 @@ h3 {
 }
 
 .studiodesstyle {
-  margin-left: -267px;
+  margin-left: -97px;
 }
 
 .labeltext3 {
@@ -414,11 +446,106 @@ h3 {
   margin-top: -32px;
 }
 
+.fh6 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: 420px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.fh6:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
+}
 
- 
+.rer {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: 400px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.rer:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
+}
+
+.Recommendations {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: 290px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(234, 251, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  
+}
 
 
+.prag {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: 445px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.prag:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
+}
 
+.gamesof26 {
+  color:#ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  margin-left: 295px;
+}
+
+.marathon {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 27px;
+  margin-left: 445px;
+  background-image: linear-gradient(rgb(191, 253, 248), rgb(255, 255, 255));
+  color: transparent;
+  background-clip: text;
+  /*The 3 comments below are lines of css that makes the span expand*/
+  display: inline-block; /* essential to work on a span */
+  transition: transform 0.2s ease; /* animation speed, smoothless for expanding */
+}
+.marathon:hover {
+  transform: scale(1.1); /* Expands the span to 110% from its original size */
+}
 
 
 
