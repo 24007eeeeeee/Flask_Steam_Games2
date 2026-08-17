@@ -126,6 +126,7 @@ body {
 }
 .gameimg3:hover {
   transform: scale(1.88);
+  margin-top: 50px;
 }
 
 
@@ -194,7 +195,10 @@ h2 {
   font-weight: bold;
   line-height: 1.2;
 }
-
+.awsomelabel {
+  margin-top: 60px;
+  color:rgb(255, 255, 255);
+}
 .w3-card-4 {
   background: linear-gradient(to right, #1a626b 0%, transparent 100%);
   margin-bottom: 20px;
@@ -649,4 +653,6 @@ h3 {
   margin-top: -60px;
 }
 
-
+.padding {
+  padding-bottom: 70px;
+}
