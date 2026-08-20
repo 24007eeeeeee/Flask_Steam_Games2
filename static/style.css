@@ -199,6 +199,10 @@ h2 {
   margin-top: 60px;
   color:rgb(255, 255, 255);
 }
+.awsomelabel2 {
+  color:rgb(255, 255, 255);
+  font-size: 10px;
+}
 .w3-card-4 {
   background: linear-gradient(to right, #1a626b 0%, transparent 100%);
   margin-bottom: 20px;
@@ -656,3 +660,4 @@ h3 {
 .padding {
   padding-bottom: 70px;
 }
+
