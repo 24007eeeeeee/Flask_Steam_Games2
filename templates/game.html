@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- External Frameworks & Fonts -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <!-- Local Stylesheet -->
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
     <title>Game</title>
     <link rel="icon" type="image/x-icon" href="/static/steamicon.png">
 </head>
@@ -13,17 +18,14 @@
     <div class="main-container"> <header class="w3-container w3-padding-32">
 </header>
 
-<!-- This is the Nav Bar -->
+<!-- Navigation Bar -->
 <nav class="topnav">
-
+<!-- Home Navigation Link & Logo -->
 <div class="style0">
 <a href="/">
 <div class="steamicon2">
-
-<!-- Just selects the steam logo from static-->
 <img src="{{ url_for('static', filename='steamicon.png') }}" alt="Steam Logo">
 </div>
-<!-- Just a span ON NAV BAR-->
 <div class="hometextstyle">
     <span>Return home?</span>
 </div>
@@ -31,13 +33,13 @@
 </div>
 
 
-<!-- Just the search bar -->
+<!-- Page Search Input -->
 <div class="search-bar">
     <input type="text" id="page-search" placeholder="Search for games within the page! (HOME PAGE)">
 </div>
 </nav>
 
-<!-- Just a span label -->
+<!-- Header Banners & Disclaimers -->
 <div class="labeltext">
     <span>ALREADY RELEASED/UPCOMING STEAM GAMES AS OF 2026</span>
 </div>
@@ -53,17 +55,15 @@
 <iframe class="video" src="{{ game[7]}}" width="550" height="345" style="border: none;" allowfullscreen>
 </iframe>
 
-<!-- Title of the game -->
+<!-- Index 2: Game Title -->
 <div class="Title">
      <h1>{{ game[2] }}</h1>
     </div>
 
-<!-- Just the studio name -->
+<!-- Named Attribute: Studio/Developer Name -->
 <div class="studio-name">
     <h2>{{ game['Name'] }}</h2>
 </div>
-
-<!-- Just a simple label to tell the user that this is the studio -->
 <div class="studio-label">
     <span>| Studio name</span>
 </div>
@@ -76,12 +76,12 @@
     <span>| Release date</span>
 </div>
 
-<!-- Game Info here -->
+<!-- Overview & Pricing -->
 <div class="information">
+    <!-- Index 5: Game Description -->
     <p>{{ game[5] }}</p>
 </div>
 
-<!-- This displays a $ then the cost of each game -->
 <div class="costgame">
     <span>$</span>
     {{ game[4] }}
@@ -92,35 +92,35 @@
     <span>currency is shown in USD</span>
 </div>
 
-<!-- just a label-->
+<!-- Copyright & Licensing Disclaimer -->
 <div class="awsomelabel">
     <span>Images, videos, and music elements belong to their rightful creators and are used here under educational Fair Use or their respective Creative Commons licenses.</span>
 </div>
 
- <!-- Just a little title -->  
+ <!-- Screenshot Gallery Section -->
 <div class="txtimage">
     <h2>3 in game screenshots </h2>
 </div>
    
 <!-- Images are here -->
-<!-- This is the first image -->
+<!-- Screenshot 1 (Index 8) -->
 <div class="gameimg1">
         <img src="{{ game[8] }}">
 </div>
 
 
-<!-- This is the second image -->
+<!-- Screenshot 2 (Index 9) -->
 <div class="gameimg2">
     <img src="{{ game[9]}}">
 </div>
 
 
-<!-- This is the third image -->
+<!-- Screenshot 3 (Index 10) -->
 <div class="gameimg3">
     <img src="{{ game[10]}}">
 </div>
 
-<!-- just some padding at the very bottom of the page-->
+<!-- Layout Spacer -->
 <div class="padding">
     <span></span>
 </div>
