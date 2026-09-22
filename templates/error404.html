@@ -1,0 +1,68 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>GAME Recommendations</title>
+    <link rel="icon" type="image/x-icon" href="/static/steamicon.png">
+</head>
+<body class="w3-container">
+    <div class="main-container"> <header class="w3-container w3-padding-32">
+</header>
+
+<!-- This is the Nav Bar -->
+<nav class="topnav">
+
+<div class="style0">
+<a href="/">
+<div class="steamicon2">
+
+<!-- Just selects the steam logo from static-->
+<img src="{{ url_for('static', filename='steamicon.png') }}" alt="Steam Logo">
+</div>
+<!-- Just a span ON NAV BAR-->
+<div class="hometextstyle">
+    <span>Return home?</span>
+</div>
+</a>
+</div>
+
+<!-- Just the search bar -->
+<div class="search-bar">
+    <input type="text" id="page-search" placeholder="Go back to HOME page to search for games!">
+</div>
+</nav>
+
+<div class="errormessage0">
+    <h1>404 - Page Not Found</h1>
+</div>
+
+
+<div class="error404image">
+    <img src="{{ url_for('static', filename='errorimage123.png') }}" alt="Studio Logo">
+</div>
+
+<div class="errormessage1">
+    <p>Sorry, the page you are looking for does not exist</p>
+</div>
+
+
+{% if request.endpoint == 'home' %}
+{% endif %}
+
+{% block body %}
+{% endblock %}
+</div> 
+
+</body>
+</html>
+
+

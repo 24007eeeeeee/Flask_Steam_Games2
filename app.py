@@ -1,7 +1,11 @@
 """Flask application to display Steam games and studio details from a SQLite database."""
 
 import sqlite3
-from flask import Flask, g, render_template
+from flask import (
+    Flask,
+    g,
+    render_template,
+)
 
 DATABASE = 'database.db'
 
@@ -18,12 +22,14 @@ def get_db():
         db.row_factory = sqlite3.Row
     return db
 
+
 @app.teardown_appcontext
 def close_connection(exception):
-    #Closes the database connection automatically when the application context ends
+    """Closes the database connection automatically when the application context ends"""
     db = getattr(g, '_database', None)
     if db is not None:
         db.close() 
+
 
 def query_db(query, args=(), one=False):
     #Helper function to execute SQL queries and fetch results
@@ -32,6 +38,7 @@ def query_db(query, args=(), one=False):
     cur.close()
     #Returns a single dictionary-like row if one=True, otherwise returns a list of rows
     return (rv[0] if rv else None) if one else rv
+
 
 #Home route, displays a list of all games joined with their studio information
 @app.route('/')
@@ -43,6 +50,7 @@ def home():
     results = query_db(sql)
     return render_template("home.html", results=results)
 
+
 #Game detail route, fetches a single game using its unique ID
 @app.route("/game/<int:id>")
 def game(id):
@@ -53,18 +61,25 @@ def game(id):
     result = query_db(sql,(id,),True)
     return render_template("game.html", game=result)
 
+
 #Studio description page route
 @app.route('/studiodesc')
 def description():
     return render_template("studiodesc.html")
+
 
 #Favorite steam games page route
 @app.route('/myfavouritesteamgames')
 def favouritesteamgames():
     return render_template("myfavouritesteamgames.html")
 
+@app.errorhandler(404)
+def page_not_found(_error):
+    """Disdwkafnw"""
+
+    return render_template("error404.html"), 404
+
+
 #Run the Flask development server in debug mode
 if __name__ == "__main__":
     app.run(debug=True)
-
-
