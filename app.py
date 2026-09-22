@@ -1,18 +1,21 @@
-from flask import Flask, g, render_template
+"""Flask application to display Steam games and studio details from a SQLite database."""
+
 import sqlite3
+from flask import Flask, g, render_template
 
 DATABASE = 'database.db'
 
-#Initialise Flask application
+# Initialise Flask application
 app = Flask(__name__)
 
+
 def get_db():
-    #Open and return a database connection tied to the current request (g context)
+    """Open and return a database connection tied to the current request context."""
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect(DATABASE)
-        #Makes it use column names like 'cost' instead of numbers like game[3]
-        db.row_factory = sqlite3.Row 
+        # Makes it use column names like 'cost' instead of numbers like game[3]
+        db.row_factory = sqlite3.Row
     return db
 
 @app.teardown_appcontext
