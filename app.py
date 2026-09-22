@@ -32,7 +32,11 @@ def close_connection(exception):
 
 
 def query_db(query, args=(), one=False):
-    #Helper function to execute SQL queries and fetch results
+    """Execute SQL queries and fetch results
+
+    Returns a single row if one=True, otherwise returns a list of rows.
+    """
+
     cur = get_db().execute(query, args)
     rv = cur.fetchall()
     cur.close()
@@ -43,7 +47,10 @@ def query_db(query, args=(), one=False):
 #Home route, displays a list of all games joined with their studio information
 @app.route('/')
 def home():
-    # Selecting GameID(0), Studio Name(1), ImageURL(2), Cost(3), Description(4), and VideoURL(6)
+    """Display a list of all games joined with their studio info
+    
+    Selects GameID, Studio Name, ImageURL, Cost, Description, and VideoURL
+    """
     sql = """SELECT SteamGames.GameID, SteamGames.Game, SteamGames.ImageURL, SteamGames.Cost, SteamGames.Description, SteamGames.VideoURL
     FROM SteamGames
     JOIN Studios ON Studios.StudioID=SteamGames.StudioID;"""
@@ -54,7 +61,7 @@ def home():
 #Game detail route, fetches a single game using its unique ID
 @app.route("/game/<int:id>")
 def game(id):
-    #just one game based on the id
+    """Fetches and display a single steam game by its unique ID."""
     sql = """SELECT * FROM SteamGames
     JOIN Studios ON Studios.StudioID=SteamGames.StudioID
     WHERE SteamGames.GameID = ?;"""
@@ -62,21 +69,23 @@ def game(id):
     return render_template("game.html", game=result)
 
 
-#Studio description page route
+# Studio description page route
 @app.route('/studiodesc')
 def description():
+    """Render the studio description page."""
     return render_template("studiodesc.html")
 
 
-#Favorite steam games page route
+# Favorite steam games page route
 @app.route('/myfavouritesteamgames')
 def favouritesteamgames():
+    """Render the user's favorite steam games page."""
     return render_template("myfavouritesteamgames.html")
+
 
 @app.errorhandler(404)
 def page_not_found(_error):
-    """Disdwkafnw"""
-
+    """Render a custom 404 page error screen."""
     return render_template("error404.html"), 404
 
 
